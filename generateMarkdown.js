@@ -85,6 +85,11 @@ function generateMarkdown(data) {
   ## Features
 
   ${data.features}
+
+  ## Questions
+
+  ${data.github}
+  ${data.email}
 `;
 }
 
