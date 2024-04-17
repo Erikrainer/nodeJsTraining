@@ -58,15 +58,21 @@ function generateMarkdown(data) {
 
   ${data.description}
 
+  ### Table of Contents
+  * Installation
+  * Usage
+  
   ## Installation
 
   To instal run the following commands :
   \`\`\`
   ${data.installation}
   \`\`\`
+  
   ## Usage
-
+  \`\`\`
   ${data.usage}
+  \`\`\`
 
   ## Credits
 
