@@ -9,7 +9,9 @@
   * Usage
   
   ## Installation
-
+  
+  Video Tutorial and how to use : https://drive.google.com/file/d/1Y_6R-pCrmv2JKqdEfgXk4ereDGXiZMhF/view?usp=sharing
+  
   To instal run the following commands :
   ```
   you need to run npm install in the terminal to install everything that you need
