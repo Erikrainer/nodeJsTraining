@@ -64,6 +64,8 @@ function generateMarkdown(data) {
   
   ## Installation
 
+  Video Tutorial and how to use : https://drive.google.com/file/d/1Y_6R-pCrmv2JKqdEfgXk4ereDGXiZMhF/view?usp=sharing
+  
   To instal run the following commands :
   \`\`\`
   ${data.installation}
