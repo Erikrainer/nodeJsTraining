@@ -4,7 +4,7 @@
 
 ## Description 📝
 
-A node project made to generate readmes based on user answers.
+A node project made to generate readme based on user answers.
 
 ## Table of Contents 🗒
 
@@ -22,7 +22,7 @@ A node project made to generate readmes based on user answers.
 
 ## Installations  💻
 
-Deployed link: TBD 
+Deployed link: https://youtu.be/R0VuPYHrhj8 
 
 To install dependencies, run these commands:
 
