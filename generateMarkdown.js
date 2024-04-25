@@ -8,13 +8,13 @@ let licenseSection;
 
 function renderLicenseBadge(data) {
   if(data.license === "MIT"){
-    licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    licenseBadge = "![Github License](https://img.shields.io/badge/License-MIT-yellow.svg)"
   }else if(data.license === "Apache"){
-    licenseBadge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    licenseBadge = "![Github License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)"
   }else if(data.license === "GPL"){
-    licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+    licenseBadge = "![Github License](https://img.shields.io/badge/License-GPLv3-blue.svg)"
   }else if(data.license === "BSD"){
-    licenseBadge = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+    licenseBadge = "![Github License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)(https://opensource.org/licenses/BSD-3-Clause"
   }else{
     licenseBadge = "";
   }     
@@ -53,46 +53,108 @@ function renderLicenseSection(data) {
 function generateMarkdown(data) {
   renderLicenseSection(data);
   return `# ${data.title}
+  ${licenseBadge}
 
-  ## Description
 
-  ${data.description}
+## Description 📝
 
-  ### Table of Contents
-  * Installation
-  * Usage
-  
-  ## Installation
+${data.description}
 
-  Video Tutorial and how to use : https://drive.google.com/file/d/1Y_6R-pCrmv2JKqdEfgXk4ereDGXiZMhF/view?usp=sharing
-  
-  To instal run the following commands :
-  \`\`\`
-  ${data.installation}
-  \`\`\`
-  
-  ## Usage
-  \`\`\`
-  ${data.usage}
-  \`\`\`
+## Table of Contents 🗒
 
-  ## Credits
+* [Installations](#installations-💻)
 
-  ${data.credits}
+* [Usage](#usage-🏆)
 
-  ## License
+* [Contributors](#contributors-😃)
 
-  ${licenseSection}
+* [Test](#tests-🧪)
 
-  ## Features
+* [Questions](#questions)
 
-  ${data.features}
+* [License](#license-📛)
 
-  ## Questions
+## Installations  💻
 
-  ${data.github}
-  ${data.email}
+Deployed link: ${data.link} 
+
+To install dependencies, run these commands:
+
+${data.installation}
+
+## Usage 🏆
+
+${data.usage}
+
+## License 📛 
+
+  Copyright @ ${data.license}. All rights reserved.
+
+  Licensed under the ${data.license} license.
+
+  ${licenseLink}
+
+## Contributors 😃
+
+${data.credits}
+
+## Tests 🧪
+
+To run tests, run these commands:
+
+
+${data.test}
+
+
+## Questions
+
+For additional questions, contact me at the email provided below. 
+
+- GitHub: [${data.github}](https://github.com/${data.github}/)
+- Email:  ${data.email}
+
 `;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 module.exports = generateMarkdown;

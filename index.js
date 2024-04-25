@@ -32,6 +32,11 @@ const questions = [
     message: "What are the steps required to install your project?"
     },
     {
+        type:"input",
+        name:"link",
+        message:"Do you have a deployed link ?"
+    },
+    {
     type:"input",
     name:"usage",
     message:"Provide instructions and examples for use."
@@ -39,7 +44,7 @@ const questions = [
     {
     type:"input", 
     name:"credits",
-    message:"List your collaborators"  
+    message:"List your contributors"  
     },
     {
     type:"list",
@@ -49,8 +54,8 @@ const questions = [
     },
     {
     type:"input",
-    name:"features",
-    message:"If your project has a lot of features, list them here"
+    name:"test",
+    message:"List the tests available for your project"
     }
 ];
 
